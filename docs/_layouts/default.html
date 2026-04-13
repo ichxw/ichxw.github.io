@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {%- seo -%}
+    {%- feed_meta -%}
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="site-header-inner">
+          <div class="site-branding">
+            <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+            <p class="site-tagline">{{ site.author.tagline }}</p>
+          </div>
+          <nav class="site-nav">
+            <a href="{{ '/' | relative_url }}">Blog</a>
+            <a href="{{ '/about/' | relative_url }}">About</a>
+            <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <div class="content-wrap">
+          {{ content }}
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="content-wrap footer-inner">
+          <p>© {{ site.time | date: '%Y' }} {{ site.author.name }} · {{ site.description }}</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

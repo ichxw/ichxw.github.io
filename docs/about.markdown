@@ -4,15 +4,23 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I am interested in structural biology, biomolecular modeling, and the use of computation to understand molecular recognition.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+This site is a place for:
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+- blog-style scientific essays
+- technical notes and analysis
+- commentary on modeling, data, and AI in molecular science
 
+## Topics
 
-[jekyll-organization]: https://github.com/jekyll
+- protein structure and function
+- antibody–antigen interactions
+- molecular simulation and analysis
+- machine learning for biology
+- scientific communication
+
+## Links
+
+- GitHub: [ichxw](https://github.com/ichxw)
+- Email: [xwzhunc@gmail.com](mailto:xwzhunc@gmail.com)

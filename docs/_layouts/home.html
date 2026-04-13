@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<section class="home-hero">
+  <div class="home-hero-text">
+    <h2 class="home-name">{{ site.author.name }}</h2>
+    <p class="home-role">{{ site.author.tagline }}</p>
+    {{ content }}
+    <div class="home-links">
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a href="mailto:{{ site.email }}">Email</a>
+    </div>
+  </div>
+</section>
+
+{%- assign featured_posts = site.posts | where: 'featured', true -%}
+{%- if featured_posts.size > 0 -%}
+<section class="featured-posts">
+  <h2>Featured Posts</h2>
+  <ul class="post-list clean-list">
+    {%- for post in featured_posts limit:3 -%}
+      <li class="post-list-item featured-item">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+        <p class="post-meta">{{ post.date | date: "%B %d, %Y" }} · {{ post.content | number_of_words | divided_by: 180 | plus: 1 }} minute read</p>
+        {%- if post.excerpt -%}
+          <p>{{ post.excerpt | strip_html | truncate: 260 }}</p>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</section>
+{%- endif -%}
+
+<section class="post-listing">
+  <h2>Recent Posts</h2>
+  <ul class="post-list clean-list">
+    {%- for post in site.posts -%}
+      <li class="post-list-item">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+        <p class="post-meta">{{ post.date | date: "%B %d, %Y" }} · {{ post.content | number_of_words | divided_by: 180 | plus: 1 }} minute read</p>
+        {%- if post.excerpt -%}
+          <p>{{ post.excerpt | strip_html | truncate: 240 }}</p>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</section>
