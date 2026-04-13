@@ -28,7 +28,7 @@ url: "https://ichxw.github.io/" # the base hostname & protocol for your site, e.
 github_username:  ichxw
 
 # Build settings
-theme: minima
+theme: jekyll-theme-slate
 plugins:
   - jekyll-feed
 
