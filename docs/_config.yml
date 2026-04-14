@@ -1,17 +1,24 @@
 title: Molecules, Models, and Ideas
 email: xwzhunc@gmail.com
 description: >-
-  Writing on structural biology, biomolecular modeling, scientific computing,
-  and ideas at the interface of molecules and machine learning.
+  Personal writing on structural biology, molecular modeling, and machine learning for molecular science.
 domain: ichxw.github.io
 baseurl: ""
 url: "https://ichxw.github.io"
 github_username: ichxw
 
 author:
-  name: Shawn
+  name: Xiangwei Zhu
   email: xwzhunc@gmail.com
-  tagline: Structural biology, molecular modeling, scientific computing
+  tagline: Computational Chemist | Small Molecule & Antibody & ADC.
+  location: San Francisco, CA
+  profile_image: /assets/images/site/profile.jpg
+  bio: >-
+    Computational Chemist | Small Molecule & Antibody & ADC.
+
+social:
+  github: https://github.com/ichxw
+  email: mailto:xwzhunc@gmail.com
 
 header_pages:
   - about.markdown

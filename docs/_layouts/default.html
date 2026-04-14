@@ -10,31 +10,38 @@
   </head>
   <body>
     <div class="site-shell">
-      <header class="site-header">
-        <div class="site-header-inner">
-          <div class="site-branding">
-            <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-            <p class="site-tagline">{{ site.author.tagline }}</p>
+      <div class="layout-shell">
+        <aside class="sidebar">
+          <div class="sidebar-inner">
+            {%- if site.author.profile_image -%}
+            <div class="profile-photo-wrap">
+              <img class="profile-photo" src="{{ site.author.profile_image | relative_url }}" alt="{{ site.author.name }} profile photo" />
+            </div>
+            {%- endif -%}
+
+            <h1 class="sidebar-name"><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h1>
+            <p class="sidebar-tagline">{{ site.author.tagline }}</p>
+            <p class="sidebar-location">{{ site.author.location }}</p>
+
+            <div class="sidebar-bio">
+              <p>{{ site.author.bio }}</p>
+            </div>
+
+            <nav class="sidebar-nav">
+              <a href="{{ '/' | relative_url }}">Blog</a>
+              <a href="{{ '/about/' | relative_url }}">About</a>
+              <a href="{{ site.social.github }}">GitHub</a>
+              <a href="{{ site.social.email }}">Email</a>
+            </nav>
           </div>
-          <nav class="site-nav">
-            <a href="{{ '/' | relative_url }}">Blog</a>
-            <a href="{{ '/about/' | relative_url }}">About</a>
-            <a href="https://github.com/{{ site.github_username }}">GitHub</a>
-          </nav>
-        </div>
-      </header>
+        </aside>
 
-      <main class="page-content">
-        <div class="content-wrap">
-          {{ content }}
-        </div>
-      </main>
-
-      <footer class="site-footer">
-        <div class="content-wrap footer-inner">
-          <p>© {{ site.time | date: '%Y' }} {{ site.author.name }} · {{ site.description }}</p>
-        </div>
-      </footer>
+        <main class="main-column">
+          <div class="main-inner">
+            {{ content }}
+          </div>
+        </main>
+      </div>
     </div>
   </body>
 </html>
