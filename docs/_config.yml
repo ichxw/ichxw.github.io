@@ -14,11 +14,14 @@ author:
   location: San Francisco, CA
   profile_image: /assets/images/site/profile.jpg
   bio: >-
-    Computational Chemist | Small Molecule & Antibody & ADC.
+    Xiangwei Zhu focuses on AI-driven and physics-based approaches for molecular discovery,
+    with interests spanning small molecules, antibodies, and antibody–drug conjugates.
+    His work centers on structural biology, molecular recognition, and the careful use
+    of modeling to support drug discovery.
 
-social:
-  github: https://github.com/ichxw
-  email: mailto:xwzhunc@gmail.com
+#social:
+#  github: https://github.com/ichxw
+#  email: mailto:xwzhunc@gmail.com
 
 header_pages:
   - about.markdown

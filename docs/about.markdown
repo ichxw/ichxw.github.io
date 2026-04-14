@@ -27,4 +27,4 @@ This site is a place for:
 ## Profiles
 
 - GitHub: [ichxw](https://github.com/ichxw)
-- Email: [xwzhunc@gmail.com](mailto:xwzhunc@gmail.com)
+#- Email: [xwzhunc@gmail.com](mailto:xwzhunc@gmail.com)

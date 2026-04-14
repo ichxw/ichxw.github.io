@@ -30,14 +30,14 @@
             <nav class="sidebar-nav">
               <a href="{{ '/' | relative_url }}">Blog</a>
               <a href="{{ '/about/' | relative_url }}">About</a>
-              <a href="{{ site.social.github }}">GitHub</a>
-              <a href="{{ site.social.email }}">Email</a>
+              <a href="https://github.com/{{ site.github_username }}">GitHub</a>
             </nav>
           </div>
         </aside>
 
         <main class="main-column">
           <div class="main-inner">
+            <div class="content-site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
             {{ content }}
           </div>
         </main>
