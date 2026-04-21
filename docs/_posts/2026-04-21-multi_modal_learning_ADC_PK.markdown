@@ -30,7 +30,6 @@ This framework deconvolutes ADCs into three fundamental components and applies t
     - sequence representation
         - [Sequence-based physicochemical properties](https://github.com/althonos/peptides.py)
         - **Protein language models ([AntiBERTy](https://github.com/jeffreyruffolo/AntiBERTy), [ESM-2](https://github.com/facebookresearch/esm))**
-        - 
 - Conjugation features (DAR, site)
     - one-hot representation for conjugation sites
 - Linker-payload physicochemical properties
